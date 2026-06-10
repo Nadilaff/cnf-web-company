@@ -1,0 +1,678 @@
+DEBUG - 2026-06-04 02:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-04 02:01:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'chakra_naga_furniture' in C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'chakra_naga_fur...', 3306, '', 0)
+#1 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Models\LanguageModel.php(26): CodeIgniter\BaseModel->first()
+#7 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Models\TranslationModel.php(25): App\Models\LanguageModel->getLanguageIdByCode('en')
+#8 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Controllers\Home.php(66): App\Models\TranslationModel->getAllTranslations('en')
+#9 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+#10 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\CodeIgniter.php(903): App\Controllers\Home->__construct()
+#11 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#12 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\suluh\\...')
+#17 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'chakra_naga_furniture' in C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Models\LanguageModel.php(26): CodeIgniter\BaseModel->first()
+#6 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Models\TranslationModel.php(25): App\Models\LanguageModel->getLanguageIdByCode('en')
+#7 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Controllers\Home.php(66): App\Models\TranslationModel->getAllTranslations('en')
+#8 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\app\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+#9 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\CodeIgniter.php(903): App\Controllers\Home->__construct()
+#10 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#11 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\suluh\Documents\GitHub\cnf-compro\cnf\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\suluh\\...')
+#16 {main}
+CRITICAL - 2026-06-04 02:01:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'chakra_naga_furniture'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `languages`
+WHERE `code` = :code:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\LanguageModel.php(26): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Models\TranslationModel.php(25): App\Models\LanguageModel->getLanguageIdByCode('en')
+ 7 APPPATH\Controllers\Home.php(66): App\Models\TranslationModel->getAllTranslations('en')
+ 8 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 9 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+10 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\suluh\\Documents\\GitHub\\cnf-compro\\cnf\\public\\index.php')
+DEBUG - 2026-06-04 02:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-04 02:07:55 --> ErrorException: Undefined array key "company_name"
+[Method: GET, Route: gallery]
+in APPPATH\Controllers\Home.php on line 492.
+ 1 APPPATH\Controllers\Home.php(492): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "company_name"', 'C:\\Users\\suluh\\Documents\\GitHub\\cnf-compro\\cnf\\app\\Controllers\\Home.php', 492)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->gallery()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\suluh\\Documents\\GitHub\\cnf-compro\\cnf\\public\\index.php')
+DEBUG - 2026-06-04 02:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 02:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-04 02:57:46 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(130): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-06-04 02:57:47 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\CNF\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 D:\CNF\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 D:\CNF\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 D:\CNF\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 D:\CNF\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#4 D:\CNF\vendor\codeigniter4\framework\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+#1 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(130): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\CNF\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-06-04 02:58:19 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(130): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-06-04 02:58:19 --> ErrorException: Uncaught Error: Class "Locale" not found in D:\CNF\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:76
+Stack trace:
+#0 D:\CNF\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(117): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 D:\CNF\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 D:\CNF\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 D:\CNF\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(85): CodeIgniter\HTTP\Response->send()
+#4 D:\CNF\vendor\codeigniter4\framework\system\Debug\Exceptions.php(162): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(350): CodeIgniter\CodeIgniter->initialize()
+#1 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(130): CodeIgniter\Boot::initializeCodeIgniter()
+#2 D:\CNF\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-06-04 02:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-04 02:59:20 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Home.php(41): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 02:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-04 02:59:21 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Home.php(41): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 02:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-04 02:59:29 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Home.php(41): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 03:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-04 03:29:19 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\Database.php on line 182.
+ 1 SYSTEMPATH\Database\Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Home.php(41): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 03:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-04 03:30:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4 in D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`in...', 0)
+#1 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`in...')
+#2 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`in...')
+#3 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`in...', Array, false)
+#4 D:\CNF\app\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\CNF\app\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+#6 D:\CNF\app\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+#7 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(903): App\Controllers\Home->__construct()
+#8 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#9 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\CNF\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\CNF\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\CNF\\public\\i...')
+#14 {main}
+CRITICAL - 2026-06-04 03:30:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 2 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 4 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:30:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 4 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 6 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 7 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:30:20 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 5 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 7 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 8 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 03:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-04 03:32:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4 in D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`in...', 0)
+#1 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`in...')
+#2 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`in...')
+#3 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`in...', Array, false)
+#4 D:\CNF\app\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\CNF\app\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+#6 D:\CNF\app\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+#7 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(903): App\Controllers\Home->__construct()
+#8 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#9 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\CNF\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\CNF\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\CNF\\public\\i...')
+#14 {main}
+CRITICAL - 2026-06-04 03:32:08 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 2 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 4 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:32:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 4 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 6 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 7 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:32:08 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 5 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 7 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 8 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 03:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-04 03:34:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4 in D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`in...', 0)
+#1 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`in...')
+#2 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`in...')
+#3 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`in...', Array, false)
+#4 D:\CNF\app\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\CNF\app\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+#6 D:\CNF\app\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+#7 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(903): App\Controllers\Home->__construct()
+#8 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#9 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\CNF\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\CNF\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\CNF\\public\\i...')
+#14 {main}
+CRITICAL - 2026-06-04 03:34:39 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 2 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 4 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:34:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 4 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 6 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 7 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:34:39 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 5 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 7 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 8 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 03:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-04 03:34:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4 in D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\CNF\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`in...', 0)
+#1 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`in...')
+#2 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`in...')
+#3 D:\CNF\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`in...', Array, false)
+#4 D:\CNF\app\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\CNF\app\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+#6 D:\CNF\app\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+#7 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(903): App\Controllers\Home->__construct()
+#8 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+#9 D:\CNF\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 D:\CNF\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\CNF\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\CNF\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\CNF\\public\\i...')
+#14 {main}
+CRITICAL - 2026-06-04 03:34:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 2 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 4 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:34:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 4 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 6 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 7 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+CRITICAL - 2026-06-04 03:34:57 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY `ci`.`info_key` ASC' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `ci`.`info_key`, COALESCE(cit.translated_value, ci.info_value) as info_value, `ci`.`info_type`
+FROM `company_info` `ci`
+LEFT JOIN `company_info_translations` `cit` ON `ci`.`id` = `cit`.`company_info_id` AND `cit`.`language_id` = 
+ORDER BY `ci`.`info_key` ASC', [], false)
+ 5 APPPATH\Models\CompanyInfoModel.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(69): App\Models\CompanyInfoModel->getCompanyInfo('en')
+ 7 APPPATH\Controllers\Home.php(60): App\Controllers\Home->loadDataFromDatabase()
+ 8 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 03:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 03:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 04:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 05:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 07:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 07:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 07:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 07:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 07:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 07:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 07:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2026-06-04 08:34:01 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\career.php on line 123.
+ 1 APPPATH\Views\career.php(123): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\CNF\\app\\Views\\career.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('career', [], true)
+ 5 APPPATH\Controllers\Home.php(127): view('career', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->career()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+WARNING - 2026-06-04 08:34:01 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\career.php on line 123.
+ 1 APPPATH\Views\career.php(123): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\CNF\\app\\Views\\career.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('career', [], true)
+ 5 APPPATH\Controllers\Home.php(127): view('career', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->career()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\CNF\\public\\index.php')
+DEBUG - 2026-06-04 08:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 08:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-04 09:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
