@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h1 class="display-4 fw-bold mb-3"><?= $translations['about_title'] ?? 'About Our Company' ?></h1>
+                <h1 class="hero-title display-4 fw-bold mb-3"><?= $translations['about_title'] ?? 'About Our Company' ?></h1>
                 <p class="company-description lead mb-4"><?= $translations['company_description'] ?? 'Premium furniture manufacturer from Jepara' ?></p>
                 <div class="about-stats d-flex gap-4">
                     <div class="stat-item">
@@ -47,7 +47,7 @@
     </div>
 </section>
 
-<!-- Mission & Vision -->->
+<!-- Mission & Vision -->
 <section class="mission-vision-section py-5">
     <div class="container">
         <div class="row g-4">
@@ -269,7 +269,7 @@
 <style>
     /* About Page Specific Styles */
     .about-hero {
-        background: #1A1A1A;
+        background: linear-gradient(135deg, var(--black-color) 0%, var(--coffee-color) 100%);
     }
 
     .about-hero .contain .about-hero-image img {
@@ -278,7 +278,7 @@
     }
 
     .about-hero .company-description {
-        color: #777777;
+        color: rgba(255, 255, 240, 0.8);
     }
 
     .about-stats {
@@ -403,6 +403,15 @@
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         position: relative;
+        /* Initial state for scroll animation */
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .timeline-content.reveal {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .timeline-year {
@@ -702,24 +711,20 @@
     // Initialize timeline animation
     document.addEventListener('DOMContentLoaded', function() {
         // Animate timeline items on scroll
-        const timelineItems = document.querySelectorAll('.timeline-item');
+        const timelineContents = document.querySelectorAll('.timeline-content');
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('reveal');
                 }
             });
         }, {
-            threshold: 0.1
+            threshold: 0.2
         });
 
-        timelineItems.forEach(item => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(20px)';
-            item.style.transition = 'all 0.6s ease';
-            observer.observe(item);
+        timelineContents.forEach(content => {
+            observer.observe(content);
         });
 
         // Animate value cards
