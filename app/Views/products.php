@@ -13,7 +13,7 @@
 <!-- Brand/Partner Slider (Fixed Version) -->
 <section class="brand-section py-5 bg-white border-bottom overflow-hidden">
     <div class="container">
-        <h6 class="text-center text-uppercase mb-5" style="letter-spacing: 4px; color: #999; font-weight: 400; font-size: 0.75rem;">
+        <h6 class="text-center text-uppercase mb-5" style="letter-spacing: 4px; color: #8b7355; font-weight: 600; font-size: 0.75rem;">
             <?= $translations['trusted_by'] ?? 'TRUSTED BY INTERNATIONAL BRANDS & ARCHITECTS' ?>
         </h6>
         <div class="brand-slider-container">
@@ -38,22 +38,31 @@
 </section>
 
 <!-- Main Products Section (Architectural Editorial) -->
-<section class="products-editorial py-5" style="background-color: #fafafa;">
+<section class="products-editorial py-5">
     <div class="container py-5">
         <div class="row g-0">
             <!-- Refined Minimalist Sidebar -->
             <div class="col-lg-2">
                 <div class="editorial-sidebar sticky-top" style="top: 120px;">
-                    <div class="mb-5">
-                        <span class="editorial-label"><?= $translations['browse_by'] ?? 'Browse By' ?></span>
-                        <div class="editorial-menu mt-4">
-                            <a href="<?= base_url('products') ?>" class="editorial-menu-item <?= !$category ? 'active' : '' ?>">
-                                <?= $translations['all_collections'] ?? 'All Collections' ?>
+                    <div class="sidebar-card">
+                        <div class="sidebar-header">
+                            <span class="editorial-label">
+                                <?= $translations['browse_by'] ?? 'Browse By' ?>
+                            </span>
+                        </div>
+
+                        <div class="editorial-menu">
+                            <a href="<?= base_url('products') ?>"
+                                class="editorial-menu-item <?= !$category ? 'active' : '' ?>">
+                                <span>All Collections</span>
+                                <i class="fas fa-arrow-right"></i>
                             </a>
+
                             <?php foreach ($categories as $cat): ?>
                                 <a href="<?= base_url('products/' . $cat['slug']) ?>"
                                     class="editorial-menu-item <?= ($category && $category['slug'] == $cat['slug']) ? 'active' : '' ?>">
-                                    <?= $cat['name'] ?>
+                                    <span><?= $cat['name'] ?></span>
+                                    <i class="fas fa-arrow-right"></i>
                                 </a>
                             <?php endforeach; ?>
                         </div>
@@ -138,7 +147,7 @@
 </section>
 
 <!-- Inquiry Concierge Section -->
-<section class="inquiry-concierge py-5" style="background-color: #fff; border-top: 1px solid #eee;">
+<section class="inquiry-concierge py-5">
     <div class="container py-5">
         <div class="row align-items-center g-5">
             <div class="col-lg-5">
@@ -148,16 +157,6 @@
                     <p class="text-muted mb-5" style="line-height: 1.8;">
                         <?= $translations['inquiry_desc'] ?? 'Our team of consultants is ready to assist you in finding the perfect pieces for your space. Whether you need a single piece or a full interior solution, we are here to help.' ?>
                     </p>
-
-                    <div class="d-flex align-items-center gap-4 mb-4">
-                        <div class="icon-box-small">
-                            <i class="fas fa-envelope-open-text"></i>
-                        </div>
-                        <div>
-                            <h6 class="fw-bold mb-1">Email Inquiry</h6>
-                            <p class="small text-muted mb-0"><?= $companyInfo['company_email'] ?? 'info@chakranagafurniture.com' ?></p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -259,7 +258,7 @@
 
     /* Editorial Sidebar */
     .editorial-label {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -278,7 +277,6 @@
         font-size: 0.9rem;
         font-weight: 400;
         transition: all 0.3s ease;
-        padding-left: 0;
         position: relative;
     }
 

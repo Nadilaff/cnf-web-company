@@ -326,7 +326,7 @@
 
     .mission-icon,
     .vision-icon {
-        color: #666666;
+        color: #8B7355;
     }
 
     .mission-vision-section h3 {

@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
-                <h1 class="display-4 fw-bold mb-3"><?= $translations['gallery_title'] ?? 'Our Gallery' ?></h1>
+                <h1 class="hero-title display-4 fw-bold mb-3"><?= $translations['gallery_title'] ?? 'Our Gallery' ?></h1>
                 <p class="gallery-description lead mb-4"><?= $translations['gallery_description'] ?? 'Explore our furniture collection, workshop processes, and completed projects' ?></p>
                 <div class="gallery-stats d-flex gap-4">
                     <div class="stat-item">
@@ -712,7 +712,7 @@
 <style>
     /* Gallery Page Specific Styles */
     .gallery-hero {
-        background: #1A1A1A;
+        background: linear-gradient(135deg, var(--black-color) 0%, var(--coffee-color) 100%);
     }
 
     .gallery-hero-image img {
@@ -726,7 +726,7 @@
     }
 
     .gallery-hero .gallery-description {
-        color: #777777;
+        color: rgba(255, 255, 240, 0.8);
     }
 
     .gallery-stats {

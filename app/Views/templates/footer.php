@@ -95,7 +95,7 @@
                     <form class="newsletter-form">
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="<?= $translations['newsletter_placeholder'] ?? 'Enter your email address' ?>" required>
-                            <button class="btn" type="submit">
+                            <button class="btn btn-newsletter" type="submit">
                                 <i class="fas fa-paper-plane me-2"></i> <?= $translations['subscribe_button'] ?? 'Subscribe' ?>
                             </button>
                         </div>
@@ -133,7 +133,6 @@
 
 <!-- Custom JS -->
 <script src="<?= base_url('assets/js/script.js') ?>"></script>
-
 </body>
 
 </html>

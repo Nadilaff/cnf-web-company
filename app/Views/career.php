@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8">
-                <h1 class="display-4 fw-bold mb-3"><?= $translations['career_title'] ?? $translations['join_our_team'] ?? 'Join Our Team' ?></h1>
+                <h1 class="hero-title display-4 fw-bold mb-3"><?= $translations['career_title'] ?? $translations['join_our_team'] ?? 'Join Our Team' ?></h1>
                 <p class="career-description lead mb-4"><?= $companyInfo['company_description'] ?? 'PT Chakra Naga Furniture is a leading furniture manufacturer based in Jepara, Indonesia' ?></p>
                 <div class="career-stats d-flex gap-4 mb-4">
                     <div class="stat-item">
@@ -545,11 +545,11 @@
 <style>
     /* Career Page Specific Styles */
     .career-hero {
-        background: #1A1A1A;
+        background: linear-gradient(135deg, var(--black-color) 0%, var(--coffee-color) 100%);
     }
 
     .career-hero .career-description {
-        color: #777777
+        color: rgba(255, 255, 240, 0.8);
     }
 
     .career-stats .stat-item h3 {

@@ -174,7 +174,6 @@ a:hover {
 .categories-section,
 .testimonials-section,
 .contact-info-section,
-.values-section,
 .certifications-section,
 .location-section,
 .gallery-grid,
@@ -182,18 +181,15 @@ a:hover {
 .positions-section,
 .process-section,
 .employee-testimonials,
-.categories-detail-section {
+.categories-detail-,
+.mission-vision-section,
+.values-section {
     background-color: var(--ivory-color);
 }
 
 .products-section,
-.services-section,
 .gallery-section {
     background-color: var(--cream-color);
-}
-
-.mission-vision-section {
-    background-color: #FFFFFF;
 }
 
 /* Alternate Dark Background for Contrast */
@@ -427,7 +423,6 @@ a:hover {
     }
 }
 /* Consolidated Section Backgrounds */
-section, 
 .about-section,
 .categories-section,
 .testimonials-section,
@@ -1339,6 +1334,126 @@ section,
         margin-bottom: 0;
     }
 }
+
+/* Products Style */
+.sidebar-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 30px 0 10px 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.sidebar-header {
+    padding: 0 25px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.editorial-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #A4998C;
+    font-weight: 600;
+}
+
+.editorial-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.editorial-menu-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px 18px 15px;
+    color: #444;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .35s ease;
+    border-left: 3px solid transparent;
+}
+
+.editorial-menu-item:hover {
+    background: #f8f7f5;
+    color: #000;
+    padding-left: 45px;
+}
+
+.editorial-menu-item i {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all .3s ease;
+    font-size: 12px;
+}
+
+.editorial-menu-item:hover {
+    background: #f8f7f5;
+    color: #000;
+    padding-left: 32px;
+}
+
+.editorial-menu-item:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.editorial-menu-item.active {
+    background: linear-gradient(90deg,
+            rgba(164, 153, 140, .12),
+            transparent);
+    border-left: 3px solid #A4998C;
+    color: #111;
+    font-weight: 600;
+}
+
+.editorial-menu-item.active i {
+    opacity: 1;
+    transform: translateX(0);
+    color: #A4998C;
+}
+
+/* efek garis kecil */
+.editorial-menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 25px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.editorial-menu-item:last-child::after {
+    display: none;
+}
+
+/* Responsive Product */
+@media (max-width: 991.98px) {
+
+    .editorial-sidebar {
+        position: static !important;
+        margin-bottom: 40px;
+    }
+
+    .sidebar-card {
+        border-radius: 18px;
+        padding: 20px 0;
+    }
+
+    .editorial-menu-item {
+        padding: 14px 20px;
+    }
+}
+
 /* Footer Styles */
 .footer {
     background-color: var(--dark-color);
@@ -1461,7 +1576,8 @@ section,
 }
 
 .newsletter-form .btn:hover {
-    background-color: var(--gold-color) !important;
+    background-color: #A4998C !important;
+    border-color: #A4998C;
     transform: translateY(-2px);
 }
 
@@ -1565,6 +1681,7 @@ section,
     color: var(--text-light);
     letter-spacing: 0.3px;
     margin-top: 2px;
+    margin-left: 10px;
 }
 
 /* Navigation Items - Perfect Alignment */
